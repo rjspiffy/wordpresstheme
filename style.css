@@ -1,0 +1,86 @@
+/*
+Theme Name: Your Theme Name
+Theme URI: https://example.com/
+Author: Your Name
+Author URI: https://example.com/
+Description: Custom WordPress Theme
+Version: 1.0
+*/
+
+/* === Reset Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* === Header Styles === */
+header.site-header {
+  background: linear-gradient(to bottom, #ffffff 80%, #ddd 100%);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-header .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.site-header .logo img {
+  height: 80%;
+}
+
+nav.site-navigation {
+  display: flex;
+  align-items: center;
+}
+
+nav.site-navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+nav.site-navigation ul li {
+  margin: 0 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+nav.site-navigation ul li:not(:last-child)::after {
+  content: "|";
+  margin-left: 10px;
+  color: #999;
+}
+
+nav.site-navigation ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* === Main Content Area === */
+main {
+  padding: 40px;
+}
+
+/* === Footer === */
+footer.site-footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  margin-top: 40px;
+  font-size: 14px;
+}
